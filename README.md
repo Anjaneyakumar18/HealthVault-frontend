@@ -1,12 +1,128 @@
-# React + Vite
+# 🏥 Hospital Vault System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Hospital Vault System is a web-based application developed during a **24-hour college-level hackathon** to digitally manage patient medical records such as lab reports, prescriptions, and appointments.  
+The project focuses on simplifying hospital workflows by centralizing patient data and enabling seamless collaboration between doctors.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🧠 Problem Statement
 
-## Expanding the ESLint configuration
+Hospitals often rely on manual or scattered systems to manage:
+- Patient lab reports
+- Previous prescriptions
+- Doctor appointments
+- Referrals between doctors
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+This leads to inefficiency, data loss, and difficulty in tracking patient history.  
+**Hospital Vault System** provides a centralized digital solution for storing and accessing patient medical information.
+
+---
+
+## ✨ Features
+
+### 👥 Role-Based System
+The application supports four main roles:
+- **Patient**
+- **Doctor**
+- **Lab Staff**
+- **Admin**
+
+Each role has access to features relevant to their responsibilities.
+
+---
+
+### 📁 Lab Report Storage
+- Lab staff can upload patient lab reports
+- Reports are stored as **text (.txt) files**
+- Reports are linked to the respective patient profile
+
+---
+
+### 📄 Prescription History
+- Doctors can view a patient's **complete previous prescription history**
+- Helps in understanding medical background and ongoing treatments
+
+---
+
+### 🔁 Doctor-to-Doctor Case Forwarding
+- Doctors can forward a patient case to another doctor
+- The forwarded doctor receives **full medical history**
+- Access is **permanent**, enabling long-term collaboration
+
+---
+
+### 📅 Appointment Booking
+- Patients can book appointments with doctors
+- Doctors can view assigned appointments
+- Simplifies appointment tracking within the hospital
+
+---
+
+### 👤 Admin Management
+- Admin can manage users and roles
+- Controls overall system configuration
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+- React.js
+
+### Backend
+- Spring Boot (REST APIs)
+
+### Database
+- MySQL
+
+### API Testing
+- Postman
+
+---
+
+## 🔐 Authentication Note
+
+- Basic authentication is implemented
+- No advanced security mechanisms were added
+- Security was intentionally kept minimal due to **hackathon time constraints**
+
+---
+
+## 🏗️ System Highlights
+
+- Clear separation of frontend and backend
+- RESTful API-based communication
+- Simple database design to manage patients, reports, and appointments
+- Focus on functionality and real-world hospital workflows
+
+---
+
+## 🏆 Hackathon Details
+
+- **Duration:** 24 Hours  
+- **Level:** College-Level Hackathon  
+- **Organized by:** DataValley (in collaboration with NEC)  
+- **Institution:** Narasaraopet Engineering College (NEC)
+
+This project was built and demonstrated within the hackathon timeframe, focusing on practical use cases rather than production-level complexity.
+
+---
+
+## 🚀 Future Enhancements
+
+- JWT-based authentication and authorization
+- Secure file storage (PDF/image support)
+- Email notifications for appointments and reports
+- Audit logs for medical record access
+- Search and filter functionality for medical records
+- Mobile application support
+- Analytics dashboard for doctors and admins
+
+---
+
+## 👨‍💻 Contribution
+
+- Designed system architecture
+- Developed backend APIs using Spring Boot
+- Integrated frontend with backend APIs
+- Designed database schema and relationships
